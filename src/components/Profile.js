@@ -1,16 +1,18 @@
-
-const Profile = ({profile}) => {
+const Profile = ({ profile }) => {
   return (
     <>
-      <article  className="user-profile">
-        <img src={profile.img} alt=":("></img>
+      <article className="user-profile">
+        <img src={profile.img} alt="profile"></img>
         <div>
-          <h1 >{profile.name}</h1>
-          <p >{new Date().getFullYear()-new Date(profile.birthOn).getFullYear()} Years</p>
+          <h1>{profile.name}</h1>
+          <p>
+            {new Date().getFullYear() - new Date(profile.birthOn).getFullYear()}
+            Years
+          </p>
         </div>
       </article>
     </>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
