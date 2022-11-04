@@ -1,7 +1,7 @@
-import { data } from "../data";
 import { useState, useEffect } from "react";
 import Button from "./Button";
 import Profile from "./Profile";
+import { data } from "../data";
 
 const UserProfile = () => {
   const [users, setUsers] = useState(data);

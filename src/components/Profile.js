@@ -2,11 +2,11 @@ const Profile = ({ profile }) => {
   return (
     <>
       <article className="user-profile">
-        <img src={profile.img} alt=":("></img>
+        <img src={profile.img} alt="profile"></img>
         <div>
           <h1>{profile.name}</h1>
           <p>
-            {new Date().getFullYear() - new Date(profile.birthOn).getFullYear()}{" "}
+            {new Date().getFullYear() - new Date(profile.birthOn).getFullYear()}
             Years
           </p>
         </div>
